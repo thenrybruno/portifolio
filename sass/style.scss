@@ -644,25 +644,83 @@ header {
 }
 
 @media(max-width: 340px){
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+        .img-perfil {
+            width: 220px;
+        }
+
+        .container-home{
+            h1{
+                font-size: 25px;
+            }
+
+            h2{
+                font-size: 17px;
+            }
+
+            p{
+                font-size: 11px;
+            }
+
+            .icones{
+                gap: 20px;
+                a{
+                    .github{
+                        font-size: 25px;
+                    }
+
+                    .linkedin{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sobreMim {
+        .container-sobreMim {
+            h3 {
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+
     .projetos{
     
         .container-projetos {
+            h3{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 13px;
+            }
             .lista {
                 gap: 15px;
                 
                 li{
-                    width: 230px;
+                    width: 200px;
                     height: 300px;
     
                     a{
                         h4{
-                            font-size: 17px;
+                            font-size: 13px;
                         }
                         div{
-                            margin-top: -20px;
+                            // margin-top: -20px;
                             
                             .img-projeto{
-                                width: 180px;
+                                width: 150px;
                                 height: 100px;
                             }
                         }
@@ -671,13 +729,48 @@ header {
                     .texto-projetos{
                         background-color: #d0d0d0;
                         height: 120px;
-                        width: 200px;
+                        width: 180px;
                         margin: 0 auto;
                         font-size: 11px;
                         margin-top: -10px;
                     }
                     
                 }
+            }
+        }
+    }
+
+    .container-contatos{
+        h3{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 13px;
+        }
+        .redes-sociais {
+            gap: 15px;
+        }
+    }
+
+    .footer {
+        .container-footer {
+            .endereco-footer {
+                .img-logo {
+                    width: 25px;
+                }
+
+                p{
+                    font-size: 7px;
+                }
+    
+                a {
+                    font-size: 7px;
+                }
+            }
+    
+            .desenvolvido {
+                font-size: 7px;
             }
         }
     }

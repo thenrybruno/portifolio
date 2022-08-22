@@ -539,30 +539,92 @@ header {
   }
 }
 @media (max-width: 340px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .home .img-perfil {
+    width: 220px;
+  }
+  .home .container-home h1 {
+    font-size: 25px;
+  }
+  .home .container-home h2 {
+    font-size: 17px;
+  }
+  .home .container-home p {
+    font-size: 11px;
+  }
+  .home .container-home .icones {
+    gap: 20px;
+  }
+  .home .container-home .icones a .github {
+    font-size: 25px;
+  }
+  .home .container-home .icones a .linkedin {
+    font-size: 25px;
+  }
+
+  .sobreMim .container-sobreMim h3 {
+    font-size: 20px;
+  }
+  .sobreMim .container-sobreMim p {
+    font-size: 13px;
+  }
+
+  .projetos .container-projetos h3 {
+    font-size: 20px;
+  }
+  .projetos .container-projetos p {
+    font-size: 13px;
+  }
   .projetos .container-projetos .lista {
     gap: 15px;
   }
   .projetos .container-projetos .lista li {
-    width: 230px;
+    width: 200px;
     height: 300px;
   }
   .projetos .container-projetos .lista li a h4 {
-    font-size: 17px;
-  }
-  .projetos .container-projetos .lista li a div {
-    margin-top: -20px;
+    font-size: 13px;
   }
   .projetos .container-projetos .lista li a div .img-projeto {
-    width: 180px;
+    width: 150px;
     height: 100px;
   }
   .projetos .container-projetos .lista li .texto-projetos {
     background-color: #d0d0d0;
     height: 120px;
-    width: 200px;
+    width: 180px;
     margin: 0 auto;
     font-size: 11px;
     margin-top: -10px;
+  }
+
+  .container-contatos h3 {
+    font-size: 20px;
+  }
+  .container-contatos p {
+    font-size: 13px;
+  }
+  .container-contatos .redes-sociais {
+    gap: 15px;
+  }
+
+  .footer .container-footer .endereco-footer .img-logo {
+    width: 25px;
+  }
+  .footer .container-footer .endereco-footer p {
+    font-size: 7px;
+  }
+  .footer .container-footer .endereco-footer a {
+    font-size: 7px;
+  }
+  .footer .container-footer .desenvolvido {
+    font-size: 7px;
   }
 }
 .img-skill {
