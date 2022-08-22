@@ -1,0 +1,693 @@
+@import "./variaveis/cores.scss";
+
+@import "./variaveis/reset.scss";
+
+header {
+    background-color: $fundo1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-header {
+    color: $texto1;
+
+    &:hover {
+        color: $hover;
+        transition: 0.4s;
+    }
+}
+
+.container00 {
+    min-height: 100vh;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+
+    .img-perfil {
+        filter: grayscale(100%);
+        width: 500px;
+    }
+
+    .container-home{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .icones {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+.sobreMim {
+    background-image: url('../img/fundos/fundo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container-sobreMim {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+        padding: 20px 0;
+        gap: 20px;
+
+        h3 {
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+
+.projetos{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    .container-projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // width: 80%;
+        padding: 20px;
+        gap: 20px;
+    
+        .lista {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            
+            li{
+                width: 350px;
+                height: 400px;
+                background-color: $fundo-card-projetos;
+                border-radius: 20px;
+
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                    padding: 20px;
+                    color: $titulo-card-projeto;
+                    text-decoration: underline;
+                    transition: .3s;
+
+                    &:hover{
+                        color: #000;
+                    }
+
+                    div{
+                        margin-top: -20px;
+                        
+                        .img-projeto{
+                            width: 300px;
+                            height: 200px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+
+                .texto-projetos{
+                    background-color: #d0d0d0;
+                    height: 120px;
+                    width: 320px;
+                    margin: 0 auto;
+                    color: $texto-projeto;
+                    padding: 7px;
+                    text-align: justify;
+                    font-size: 15px;
+                    border-radius: 10px;
+                    margin-top: -10px;
+                }
+                
+            }
+        }
+    }
+}
+
+.container-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+
+    .habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        width: 480px;
+        min-height: 500px;
+        background-color: $fundo-habilidades;
+        // padding: 15px;
+        border-radius: 15px;
+        padding: 10px;
+
+        .habilidade-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid transparent;
+            width: 175px;
+            height: 180px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                border: 2px solid $hover2;
+                background-color: $fundo-habilidades-hover;
+
+                p {
+                    color: #000;
+                }
+            }
+        }
+
+        p {
+            font-size: 25px;
+            color: $texto2;
+        }
+    }
+}
+
+.container-contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 20px;
+
+    .redes-sociais {
+        display: flex;
+        gap: 60px;
+    }
+
+    .text-email {
+        a {
+            color: $texto2;
+            transition: .4s;
+
+            &:hover {
+                color: $hover2;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $fundo1;
+
+    .container-footer {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .endereco-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                color: $texto1;
+                transition: .4s;
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+        }
+
+        .desenvolvido {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}
+
+@media(max-width: 1056px){
+    .home {
+        .container-home{
+            margin-right: 20px;
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .container{
+        .icone-menu{
+            button{
+                background-color: $texto1;
+            }
+        }
+    }
+
+    .home {
+        .container-home{
+            h1{
+                font-size: 50px;
+            }
+
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 855px){
+    .home {
+        .img-perfil {
+            width: 450px;
+        }
+
+        .container-home{
+            h1{
+                font-size: 40px;
+            }
+
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+
+    a{
+        .github{
+            font-size: 40px;
+        }
+    
+        .linkedin{
+            font-size: 40px;
+        }
+    
+        .whatsapp{
+            font-size: 40px;
+        }
+    }
+}
+
+@media(max-width: 770px){
+    .home {
+        .img-perfil {
+            width: 400px;
+        }
+
+        .container-home{
+            h1{
+                font-size: 35px;
+            }
+
+            h2{
+                font-size: 25px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 632px){
+    .home {
+        .img-perfil {
+            width: 350px;
+        }
+
+        .container-home{
+            h1{
+                font-size: 30px;
+            }
+
+            h2{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+
+    .sobreMim {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+
+        .container-sobreMim {
+            width: auto;
+            gap: 20px;
+            padding: 20px;
+            margin-left: 0;
+    
+            h3 {
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+
+    .projetos{
+    
+        .container-projetos {
+            .lista {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                
+                li{
+                    width: 250px;
+                    height: 300px;
+    
+                    a{
+                        h4{
+                            font-size: 17px;
+                        }
+                        div{
+                            margin-top: -20px;
+                            
+                            .img-projeto{
+                                width: 200px;
+                                height: 100px;
+                            }
+                        }
+                    }
+    
+                    .texto-projetos{
+                        background-color: #d0d0d0;
+                        height: 120px;
+                        width: 220px;
+                        margin: 0 auto;
+                        font-size: 11px;
+                        margin-top: -10px;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .footer {
+        .container-footer {
+            .endereco-footer {
+                .img-logo {
+                    width: 60px;
+                }
+
+                p{
+                    font-size: 13px;
+                }
+    
+                a {
+                    font-size: 13px;
+                }
+            }
+    
+            .desenvolvido {
+                font-size: 13px;
+            }
+        }
+    
+    }
+
+    a{
+        .github{
+            font-size: 30px;
+        }
+    
+        .linkedin{
+            font-size: 30px;
+        }
+    
+        .whatsapp{
+            font-size: 30px;
+        }
+    }
+}
+
+@media(max-width: 558px){
+    .home {
+        .img-perfil {
+            width: 300px;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    #header{
+        nav{
+            .container{
+                .imagem-header{
+                    a{
+                        .img-logo {
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+        .img-perfil {
+            width: 400px;
+        }
+
+        .container-home{
+            margin-right: 0;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+        }
+    }
+
+    .sobreMim {
+        .container-sobreMim {
+            h3 {
+                font-size: 25px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .container-skills {
+        h3{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+        }
+        .habilidades {
+            display: flex;
+            gap: 20px;
+            width: 300px;
+            min-height: 300px;
+            padding: 15px;
+    
+            .habilidade-container {
+                width: 120px;
+                height: 140px;
+            }
+
+            .img-skill {
+                width: 40px;
+            }
+    
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+    
+
+    .container-contatos{
+        h3{
+            font-size: 25px;
+        }
+
+        p{
+            font-size: 15px;
+        }
+
+        .redes-sociais {
+            gap: 30px;
+        }
+    }
+
+    .footer {
+        .container-footer {
+            .endereco-footer {
+                .img-logo {
+                    width: 40px;
+                }
+
+                p{
+                    font-size: 10px;
+                }
+    
+                a {
+                    font-size: 10px;
+                }
+            }
+    
+            .desenvolvido {
+                font-size: 10px;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 420px){
+    .home {
+        .img-perfil {
+            width: 300px;
+        }
+    }
+
+    .projetos{
+        .container-projetos {
+            h3{
+                font-size: 25px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 370px){
+    .home {
+        .img-perfil {
+            width: 250px;
+        }
+    }
+
+    .container-skills {
+        .habilidades {
+            display: flex;
+            gap: 10px;
+            width: 250px;
+            min-height: 250px;
+            padding: 15px;
+    
+            .habilidade-container {
+                width: 90px;
+                height: 90px;
+            }
+
+            .img-skill {
+                width: 30px;
+            }
+    
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .container-contatos{
+        .redes-sociais {
+            gap: 20px;
+        }
+    }
+
+    .footer {
+        .container-footer {
+            .endereco-footer {
+                .img-logo {
+                    width: 30px;
+                }
+
+                p{
+                    font-size: 8px;
+                }
+    
+                a {
+                    font-size: 8px;
+                }
+            }
+    
+            .desenvolvido {
+                font-size: 8px;
+            }
+        }
+    }
+}
+
+@media(max-width: 340px){
+    .projetos{
+    
+        .container-projetos {
+            .lista {
+                gap: 15px;
+                
+                li{
+                    width: 230px;
+                    height: 300px;
+    
+                    a{
+                        h4{
+                            font-size: 17px;
+                        }
+                        div{
+                            margin-top: -20px;
+                            
+                            .img-projeto{
+                                width: 180px;
+                                height: 100px;
+                            }
+                        }
+                    }
+    
+                    .texto-projetos{
+                        background-color: #d0d0d0;
+                        height: 120px;
+                        width: 200px;
+                        margin: 0 auto;
+                        font-size: 11px;
+                        margin-top: -10px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.img-skill {
+    width: 60px;
+}
+
+.img-logo {
+    width: 90px;
+}
+
