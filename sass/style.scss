@@ -7,6 +7,7 @@ header {
 }
 
 .container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -25,6 +26,7 @@ header {
 }
 
 .home {
+    width: 100%;
     display: flex;
     align-items: center;
 
@@ -46,6 +48,7 @@ header {
 }
 
 .sobreMim {
+    width: 100%;
     background-image: url('../img/fundos/fundo2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,6 +71,7 @@ header {
 }
 
 .projetos{
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -76,7 +80,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        // width: 80%;
+        width: 80%;
         padding: 20px;
         gap: 20px;
     
@@ -87,7 +91,7 @@ header {
             flex-wrap: wrap;
             gap: 30px;
             
-            li{
+            .item-lista{
                 width: 350px;
                 height: 400px;
                 background-color: $fundo-card-projetos;
@@ -137,6 +141,7 @@ header {
 }
 
 .container-skills {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,6 +190,8 @@ header {
 }
 
 .container-contatos {
+    width: 100%;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,6 +207,7 @@ header {
         a {
             color: $texto2;
             transition: .4s;
+            font-size: 30px;
 
             &:hover {
                 color: $hover2;
@@ -209,6 +217,7 @@ header {
 }
 
 .footer {
+    width: 100%;
     background-color: $fundo1;
 
     .container-footer {
@@ -241,6 +250,7 @@ header {
 
 @media(max-width: 1056px){
     .home {
+        min-height: 80vh;
         .container-home{
             margin-right: 20px;
         }
@@ -271,6 +281,7 @@ header {
 
 @media(max-width: 855px){
     .home {
+        min-height: 70vh;
         .img-perfil {
             width: 450px;
         }
@@ -303,6 +314,7 @@ header {
 
 @media(max-width: 770px){
     .home {
+        
         .img-perfil {
             width: 400px;
         }
@@ -318,6 +330,14 @@ header {
 
             p{
                 font-size: 15px;
+            }
+        }
+    }
+
+    .container-contatos{
+        .text-email {
+            a {
+                font-size: 25px;
             }
         }
     }
@@ -372,7 +392,7 @@ header {
                 justify-content: center;
                 gap: 20px;
                 
-                li{
+                .item-lista{
                     width: 250px;
                     height: 300px;
     
@@ -400,6 +420,14 @@ header {
                     }
                     
                 }
+            }
+        }
+    }
+
+    .container-contatos{
+        .text-email {
+            a {
+                font-size: 20px;
             }
         }
     }
@@ -466,6 +494,7 @@ header {
     }
 
     .home {
+        min-height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -537,6 +566,12 @@ header {
 
         .redes-sociais {
             gap: 30px;
+        }
+
+        .text-email {
+            a {
+                font-size: 15px;
+            }
         }
     }
 
@@ -617,6 +652,26 @@ header {
     .container-contatos{
         .redes-sociais {
             gap: 20px;
+
+            a{
+                .github{
+                    font-size: 20px;
+                }
+            
+                .linkedin{
+                    font-size: 20px;
+                }
+            
+                .whatsapp{
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .text-email {
+            a {
+                font-size: 12px;
+            }
         }
     }
 
@@ -644,7 +699,23 @@ header {
 }
 
 @media(max-width: 340px){
+    #header{
+        width: 100%;
+        nav{
+            .container{
+                .imagem-header{
+                    a{
+                        .img-logo {
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .home {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -707,8 +778,9 @@ header {
             }
             .lista {
                 gap: 15px;
+                padding-left: 0;
                 
-                li{
+                .item-lista{
                     width: 200px;
                     height: 300px;
     
